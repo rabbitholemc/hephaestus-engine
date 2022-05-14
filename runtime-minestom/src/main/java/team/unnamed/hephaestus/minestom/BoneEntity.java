@@ -135,7 +135,7 @@ public final class BoneEntity
      * @param color The new bone color
      */
     public void colorize(Color color) {
-        setHelmet(getHelmet().withMeta((LeatherArmorMeta.Builder meta) -> meta.color(color)));
+        setHelmet(getHelmet().withMeta((meta) -> ((LeatherArmorMeta.Builder) meta).color(color)));
     }
 
     @Override
